@@ -16,7 +16,7 @@ if(require("data.table")) {
 
 # Load reshape2; if not available then install the package
 if(require("reshape2")) {
-  print("reshape2 is successfully  loaded.")
+  print("reshape2 is successfully loaded.")
 } else {
   print("installing package reshape2 package...")
   install.packages("reshape2")

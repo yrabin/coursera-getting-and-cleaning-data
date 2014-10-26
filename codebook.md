@@ -39,13 +39,13 @@ The original dataset includes the following files:
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
-- 'train/subject_train.txt'
+- 'train/subject_train.txt':
 Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-- 'train/Inertial Signals/total_acc_x_train.txt'
+- 'train/Inertial Signals/total_acc_x_train.txt':
 The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-- 'train/Inertial Signals/body_acc_x_train.txt'
+- 'train/Inertial Signals/body_acc_x_train.txt':
 The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
-- 'train/Inertial Signals/body_gyro_x_train.txt'
+- 'train/Inertial Signals/body_gyro_x_train.txt':
 The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
@@ -66,10 +66,6 @@ Transformation is implemented through ```run_analysis.R```; the implementation s
 1. Require both ```data.table``` and ```reshape2```
 2. Load complete variables from all features
 3. Create boolean vector to select only ```mean``` and ```std``` variables
-
-
-For each ```test``` and ```train``` dataset:
-
 4. Load and name X_test/train data containing values for each variables
 5. Subset X_test/train using the boolean vector above
 6. Load y_test/train data containing activity ID
@@ -77,13 +73,12 @@ For each ```test``` and ```train``` dataset:
 8. Name y_test/train data
 9. Load and name subject_test data
 10. Bind X_test/train, y_test/train and subject_test/train as test/train_dataset
-
-
 11. Merge test and train dataset
 12. Transform the merged dataset to flatten it
 13. Save the merged dataset as ```tidy_dataset.csv```
 
 
+Step **4** to **10** are repeated for each ```test``` and ```train``` dataset:
 
 
 ## Variables
