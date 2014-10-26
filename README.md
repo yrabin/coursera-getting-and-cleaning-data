@@ -29,9 +29,9 @@ Repository for "Getting and Cleaning data" project on Coursera (JHU Data Science
 6. Load y_test/train data containing activity ID
 7. Label activity IDs from y_test/train (create new coloumn)
 8. Name y_test/train data
-9. Load and name subject_test data
+9. Load and name subject_test/train data
 10. Bind X_test/train, y_test/train and subject_test/train as test/train_dataset
-11. Merge test and train dataset
+11. Merge test_dataset and train_dataset
 12. Transform the merged dataset to flatten it
 13. Save the merged dataset as ```tidy_dataset.csv```
 
